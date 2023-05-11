@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+body{
+	background: #f5f6fa;
+}
+
+.wrapper .sidebar{
+	top: 0;
+	left: 0;
+	width: 225px;
+	height: 100%;
+	padding: 20px 0;
+	transition: all 0.5s ease;
+}
+
+.wrapper .sidebar .profile{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+
+
+.wrapper .sidebar .profile h3{
+	color: #000;
+	margin: 10px 0 5px;
+}
+
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	/* border-bottom: 1px solid #10558d; */
+	color:#000;
+	font-size: 16px;
+	position: relative;
+}
+
+.wrapper .sidebar ul li a .icon{
+	color: #dee4ec;
+	width: 30px;
+	/* display: inline-block; */
+}
+
+ 
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+
+	background:white;
+    border-right: 2px solid rgb(5, 68, 104);
+}
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: #0c7db1;
+}
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+.wrapper .section{
+	width: calc(100% - 225px);
+	margin-left: 225px;
+	transition: all 0.5s ease;
+}
+
+
+
+
+ 
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 100%;
+}
+
+.form{
+	max-width: 550px;
+    height: 400px;
+	background: #FAFAFA;
+	padding: 30px;
+	margin: 10px 200px 100px 400px;
+}
+nav{
+    background-color: #FFBF00;
+}
+.logo{
+    width: 500pX;
+    height: 40px;
+    margin-left: 350px;
+}
+body {
+    font-family: 'lato', sans-serif;
+  }
+  .container {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  h2 {
+    font-size: 26px;
+    margin: 20px 0;
+    text-align: center;
+    
+  }
+ h2 small {
+    font-size: 0.5em;
+  }
+  
+  
+    .responsive-table li {
+      border-radius: 3px;
+      padding: 25px 30px;
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 25px;
+    }
+    .table-header {
+      background-color: #FFBF00;
+      color: #ffffff;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+    .table-row {
+      background-color: #ffffff;
+      box-shadow: 0px 0px 9px 0px rgba(0,0,0,0.1);
+    }
+    .col-1 {
+      flex-basis: 10%;
+    }
+    .col-2 {
+      flex-basis: 40%;
+    }
+    .col-3 {
+      flex-basis: 25%;
+    }
+    .col-4 {
+      flex-basis: 25%;
+    }
+    
+    @media all and (max-width: 767px) {
+      .table-header {
+        display: none;
+      }
+     
+      li {
+        display: block;
+      }
+      .col {
+        
+        flex-basis: 100%;
+        
+      }
+      
+    }
