@@ -8,7 +8,7 @@ var lastNameError = document.getElementById("lastName-error");
 var emailError = document.getElementById("email-error");
 var passwordError = document.getElementById("password-error");
 
-firstNameInput.addEventListener("keyup", function() {
+firstNameInput.addEventListener("keyup", function () {
   if (firstNameInput.validity.valueMissing) {
     firstNameError.innerHTML = "First name is required";
   } else {
@@ -16,7 +16,7 @@ firstNameInput.addEventListener("keyup", function() {
   }
 });
 
-lastNameInput.addEventListener("keyup", function() {
+lastNameInput.addEventListener("keyup", function () {
   if (lastNameInput.validity.valueMissing) {
     lastNameError.innerHTML = "Last name is required";
   } else {
@@ -24,7 +24,7 @@ lastNameInput.addEventListener("keyup", function() {
   }
 });
 
-emailInput.addEventListener("keyup", function() {
+emailInput.addEventListener("keyup", function () {
   if (emailInput.validity.valueMissing) {
     emailError.innerHTML = "Email is required";
   } else if (!validateEmail(emailInput.value)) {
@@ -34,7 +34,7 @@ emailInput.addEventListener("keyup", function() {
   }
 });
 
-passwordInput.addEventListener("keyup", function() {
+passwordInput.addEventListener("keyup", function () {
   if (passwordInput.validity.valueMissing) {
     passwordError.innerHTML = "Password is required";
   } else {
